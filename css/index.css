@@ -1,5 +1,5 @@
 
-#hi, #skills, #projects {
+#hi, #skills, #projects, #contact_me {
 
     font-family: 'Press Start 2P', cursive;
     margin: 20px;
@@ -113,5 +113,27 @@ a:hover {
 
     width: 20%;
     height:20%;
+
+}
+
+.cred {
+
+    text-align: center;
+    padding: 75px;
+    padding-bottom: 0px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+
+.git {
+
+    display: center;
+    padding: 50px;
+    padding-bottom: 10px;
+    height:3%;
+    width: 3%;
 
 }
