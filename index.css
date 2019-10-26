@@ -1,5 +1,5 @@
 
-#hi, #skills {
+#hi, #skills, #projects {
 
     font-family: 'Press Start 2P', cursive;
     margin: 20px;
@@ -51,7 +51,7 @@ nav ul li:first-child {
     margin-right: auto;
 }
 
-#graphic {
+#graphic, #meme, #granite {
 
     display: flex;
 
@@ -90,4 +90,10 @@ a:hover {
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
     padding-top: 60px;
+}
+
+#memeof {
+
+    height: 40%;
+    width: 40%;
 }
