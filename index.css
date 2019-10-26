@@ -97,3 +97,21 @@ a:hover {
     height: 40%;
     width: 40%;
 }
+
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+
+}
+
+.grid-item {
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+.preview {
+
+    width: 20%;
+    height:20%;
+
+}
