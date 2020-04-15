@@ -3,8 +3,10 @@
 <html>
 
     <head>
+
         <link rel="stylesheet" href="/css/index.css" tpe="text/css" />
         <script src="js/main.js"></script>
+         <script src="https://kit.fontawesome.com/0a421cc508.js" crossorigin="anonymous"></script>
         <title>Ana Ignat</title>
 
         <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:400,500&display=swap" rel="stylesheet">
@@ -13,38 +15,182 @@
 
     <body>
 
-        <nav>
-            <ul>
-                <li>  </li>
-                <li> <a class="active" href="http://anaignat.com">HOME</a> </li>
-                <li> <a href="skills.html">SKILLS</a> </li>
-                <li> <a href="projects.html">PROJECTS</a> </li>
-            </ul>
-        </nav>
-
-        <h1 id="hi">Hi, I'm Ana.</h1>
-
-        <div class="grid-container">
-           
-            <div class="grid-item">
-                <p style="margin-left: 20px"> I am a second year Computer Science student at the University of Manitoba with a passion for reading and 
-            learning.
-                <p style="margin-left: 20px"> Where to find me: </p>
-                <ul style="margin-left: 20px">
-                    <li> <a href="mailto:contact@anaignat.com">Email</a> </li>
-                    <li> <a href="https://ca.linkedin.com/in/ana-ignat-940898126" target="_blank"> LinkedIn </a> </li>
-                    <li> <a href="https://github.com/anaignat/" target="_blank">Github </a></li>
+        <div class = "home">
+            
+            <div class = "nav">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    
                 </ul>
             </div>
 
-             <div class="grid-item">
-                <img src="/images/graphic.png">
+            <div id="hi"> 
+                <h1>Hi, I'm Ana</h1> 
+            </div>
+
+            <div id="intro"> 
+                <h3>I am in my second year of Computer Science at the University of Manitoba.</h3>
+                <a href="#" class="scroll-down" address="true"></a>
+                <div id="social"> 
+
+                    <a class="view-resume" target="_blank" href="https://github.com/anaignat"> <i class="fab fa-github fa-x"></i>  View GitHub </a>
+                    <a class="view-resume" target="_blank" href="https://www.linkedin.com/in/ana-ignat-901/"> <i class="fab fa-linkedin"></i></i>  View LinkedIn </a>
+                    <a class="view-resume" target="_blank" href="https://drive.google.com/file/d/1Gcb8RfKZgCYNyQx-uzdmXCGp2MxeNG3A/view?usp=sharing">  <i class="fas fa-external-link-alt fa-x"></i> View Resume </a>
+
+                </div>
+                
             </div>
 
         </div>
 
-        <br><br><br><br><br>
-        <footer> <a href="https://github.com/anaignat/anaignat.github.io" target="_blank">made by ana</a> </footer>
+        <div class = "other">
+
+        <div id="skills">
+
+            <h3 class="languages"> Technical Skills: </h3> 
+
+            <div class = "button" ><p id = "lang">Java</p></div>
+            <div class = "button" ><p id = "lang">HTML & CSS</p></div>
+            <div class = "button" ><p id = "lang">JavaScript</p></div>
+            <div class = "button" ><p id = "lang">C & C++</p></div>
+            <div class = "button" ><p id = "lang">Assembly</p></div>
+            <div class = "button" ><p id = "lang">Processing</p></div>
+            <div class = "button" ><p id = "lang">VSCode</p></div>
+            <div class = "button" ><p id = "lang">IntelliJ</p></div>
+            <div class = "button" ><p id = "lang">CLion</p></div>
+            <div class = "button" ><p id = "lang">Git</p></div>
+
+            <!--
+            <h3 class="languages"> Relevant Coursework: </h3> 
+        
+            <div class = "button-course" ><p id = "course">Data Structures and Algorithms</p></div>
+            <div class = "button-course" ><p id = "course">Analysis of Algorithms</p></div>
+            <div class = "button-course" ><p id = "course">Databases</p></div>
+            <div class = "button-course" ><p id = "course">Object Orientation</p></div>
+            <div class = "button-course" ><p id = "course">Intro to Computer Systems</p></div>
+           -->
+
+        </div>
+
+        <div id="projects">
+
+            <h3 class="proj"> Projects </h3> 
+
+            <div class="container">
+
+                <div class = "item" class="thisSite">
+                    
+                    <div class="proj-info"> 
+                     <h4> Personal Website </h4>
+                        <ul>
+                        <li>A personal website showcasing my skills, projects and resume </li>
+                        <li>Made using HTML, CSS and Javascript </li>
+                        </ul>
+                        <div class="proj-link">
+                            <a target="_blank" href="https://anaignat.com"> <div class="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
+                            <a target="_blank" href="https://github.com/anaignat/anaignat.github.io"> <div class="source"> <i class="fab fa-github fa-x"></i> View on Github </a> </div>
+                        </div>
+
+                    </div>
+        
+                  
+                    <div class = "proj-pic">      
+                        <img src="/images/site.png" alt="website">
+                    </div>
+
+                </div>
+
+                <div class = "item" class="meme"> 
+
+                    <h4> Meme of the Day </h4>
+                    
+                    <div class="proj-info"> 
+                        <ul>
+                        <li> A site I made to display my favorite memes </li>
+                        <li>The meme changes based on the day of the month </li>
+                        <li>Made using HTML, CSS and Javascript</li>
+                        </ul>
+                   
+                        <div class="proj-link">
+                            <a target="_blank" href="http://memeoftheday.ca/"> <div id="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
+                            <a target="_blank" href="https://github.com/anaignat/memeoftheday.github.io"> <div id="source"> <i class="fab fa-github fa-x"></i> View on Github </a> </div>
+                        </div>
+
+                    </div>
+        
+                  
+                    <div class = "proj-pic">      
+                         <img src="/images/meme.png" alt="website">
+                    </div>
+
+                </div>
+
+
+                <div class = "item" class="hci"> 
+
+                    <h4> Family Planner for HCI Group Project </h4>
+                    
+                    <div class="proj-info"> 
+                    <ul>
+                        <li>Made for a group project for Human Computer Interaction I </li>
+                        <li>Idea was to make a family planning/communication app where each family has 
+                        access to calendars, messenger and lists to coordinate family activities. </li>
+                        <li>I did the styling of the website using CSS </li>
+                   </ul>
+                        <div class="proj-link">
+                            <a target="_blank" href="https://markrobitaille.ca/HCI-Project/#/"> <div class="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
+                            <a target="_blank" href="https://github.com/MarkRobitaille/HCI-Project"> <div class="source"> <i class="fab fa-github fa-x"></i> View on Github </a> </div>
+                        </div>
+
+                    </div>
+        
+                  
+                    <div class = "proj-pic">      
+                         <img src="/images/fam.png" alt="website">
+                    </div>
+
+                </div>
+
+                <!--<div class = "item" class="granite"> 
+
+                    <h4> Granite Financial Group </h4>
+                    
+                    <div class="proj-info"> 
+                    <ul>
+                        <li>Created website mockups with new design ideas using Sketch </li>
+                        <li>Mockups were given to the company that implemented parts of design </li>
+                   </ul>
+                        <div class="proj-link">
+                            <a target="_blank" href="https://granitefinancialgroup.ca/"> <div class="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
+                            <a target="_blank" href="http://anaignat.com/pdfs/gfg_website.pdf"> <div class="source"> <i class="fas fa-external-link-alt"></i> View Designs </a> </div>
+                        </div>
+
+                    </div>
+        
+                  
+                    <div class = "proj-pic">      
+                         <img src="/images/gfg.png" alt="website">
+                    </div>
+
+                </div>-->
+
+            </div>
+        
+        </div>
+
+
+        <div id="contact">
+             
+                                <a class="email-me" target="_blank" href="mailto:contact@anaignat.com"> <i class="far fa-envelope"></i></i> contact@anaignat.com </a> 
+
+        </div>
+
+    </div>
+
+        <footer > <a href="https://github.com/anaignat/anaignat.github.io" target="_blank">made by ana</a> </footer>
+
 
     </body>
 
