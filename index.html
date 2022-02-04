@@ -3,196 +3,251 @@
 <html>
 
     <head>
-
-        <link rel="stylesheet" href="/css/index.css" tpe="text/css" />
-        <script src="js/main.js"></script>
-         <script src="https://kit.fontawesome.com/0a421cc508.js" crossorigin="anonymous"></script>
-        <title>Ana Ignat</title>
-
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:400,500&display=swap" rel="stylesheet">
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ana</title>
     </head>
 
     <body>
 
-        <div class = "home">
-            
-            <div class = "nav">
-                <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
+        <header id="home">
+            <!-- <img src="icons/ana_icon.png" alt="character sketch of a girl" class="logo"> -->
+            <nav>
+                <ul class="nav-links">
+                    <!-- <li><a href="#home">HOME</a></li> -->
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#experience">EXPERIENCE</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
-                    
                 </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+
+            <div class="svg-wrapper">
+                <svg class="blob anim" width="1078" height="893" viewBox="0 0 1078 893" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M632.857 64.442C727.943 83.726 827.799 94.3716 900.814 153.138C970.091 208.895 989.4 295.117 1018.72 375C1048.33 455.697 1094.74 536.766 1071.88 619.267C1048.36 704.161 977.733 773.395 895.701 818.972C817.72 862.299 723.55 853.382 632.857 863.189C526.632 874.675 421.993 911.763 320.424 881.177C194.884 843.373 44.62 790.114 6.78027 674.658C-31.1057 559.06 100.131 458.312 144.591 344.675C187.204 235.759 154.182 85.1086 261.545 23.4894C369.689 -38.5781 508.107 39.1419 632.857 64.442Z" fill="url(#paint0_linear_39_134)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_39_134" x1="-277.016" y1="-94.3311" x2="1239.97" y2="207.137" gradientUnits="userSpaceOnUse">
+                    <stop offset="0.0935171" stop-color="#85A3E6"/>
+                    <stop offset="0.369792" stop-color="#A9D5EF"/>
+                    <stop offset="0.923267" stop-color="#C9C0FA"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
             </div>
-
-            <div id="hi"> 
-                <h1>Hi, I'm Ana</h1> 
-            </div>
-
-            <div id="intro"> 
-                <h3>I am a third year Computer Science Co-Op student at the University of Manitoba.</h3>
-                <a href="#" class="scroll-down" address="true"></a>
-                <div id="social"> 
-
-                    <a class="view-resume" target="_blank" href="https://github.com/anaignat"> <i class="fab fa-github fa-x"></i>  View GitHub </a>
-                    <a class="view-resume" target="_blank" href="https://www.linkedin.com/in/ana-ignat-901/"> <i class="fab fa-linkedin"></i></i>  View LinkedIn </a>
-                    <a class="view-resume" target="_blank" href="Ana_Ignat_Resume.pdf">  <i class="fas fa-external-link-alt fa-x"></i> View Resume </a>
-
+            
+            <div class="blurb">
+                <img src="icons/ana_icon.png" alt="character sketch of a girl" class="ana-icon">
+                <h1>hi, it's ana</h1>
+                <p>i'm a software developer with an interest in UX design and web development</p>
+                <div class="blurb-icons">
+                    <a target="_blank" href="mailto:contact@anaignat.com"><img id="email-icon" src="icons/mail_icon.png" alt="email icon"></a>
+                    <a target="_blank" href="https://github.com/anaignat"><img id="github-icon"src="icons/github_logo.png" alt="github icon"></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/ana-ignat-901/"><img id="linkedin-icon" src="icons/linkedin_logo.png" alt="linkedin icon"></a>
                 </div>
+            </div>
+
+        </div>
+
+        <div class="gradient">
+
+            <div id="about" class="section">
+                <div class="section-div">
+                    <h1 id="about-me">about me</h1>
+                    <p id="about-me">I am currently in my fourth year of Computer Science at the University of Manitoba in the Co-op program. I love designing and creating things, including this website!</p>
+                </div>
+                <div class="skills-div">
+                    <div class="white-box" id="skills-div">
+                        <h2 class="skills-header">languages:</h2>
+                        <ul class="skills">
+                            <li>java</li>
+                            <li>html</li>
+                            <li>css</li>
+                            <li>javascript</li>
+                            <li>c</li>
+                            <li>c++</li>
+                            <li>c#</li>
+                            <li>SQL</li>
+                            <li>php</li>
+                            <li>python</li>
+                        </ul>
+                    </div>
+                    <div class="white-box" id="skills-div">
+                        <h2 class="skills-header">technologies:</h2>
+                        <ul class="skills">
+                            <li>visual studio code</li>
+                            <li>processing</li>
+                            <li>git/github/gitlab</li>
+                            <li>bash</li>
+                            <li>react</li>
+                            <li>codeceptJS++</li>
+                            <li>unity#</li>
+                            <li>unreal</li>
+                            <li>perforce</li>
+                            <li>figma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="experience" class="section">
+                <div class="section-div" id="exp"><h1>experience</h1>
+                    <div class="white-box" id="job">
+                        <div class="job-entry">
+                            <div class="job-header-parent">
+                                <div class="job-header">
+                                    <h2 class="job-title">Junior Tools Developer</h1>
+                                    <h2 class="workplace">Ubisoft</h1>
+                                    <h3 class="date">Sep 2021 - Dec 2021</h1>
+                                </div>
+                                <div class="job-header"> 
+                                    <a target="_blank" href="https://winnipeg.ubisoft.com/"><img id="ubi-logo" src="icons/ubisoft_logo.png" alt="ubisoft logo"></a>
+                                </div>
+                            
+                            </div>
+                            <div class="job-responsibilties">
+                                <ul>
+                                    <li>Implemented new user-facing features</li>
+                                    <li>Fixed high priority bugs that affected user experience</li>
+                                    <li>Optimized existing code and features</li>
+                                    <li>Solved tickets that required cross-studio collaboration</li>
+                                    <li>Presented all of the work done by the team in a studio-wide meeting of 100 people</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-box" id="job">
+                        <div class="job-entry">
+                            <div class="job-header-parent">
+                                <div class="job-header">
+                                    <h2 class="job-title">Software Developer, Co-Op</h1>
+                                    <h2 class="workplace">Bold Commerce</h1>
+                                    <h3 class="date">Jan 2021 - Apr 2021</h1>
+                                </div>
+                                <div class="job-header"> 
+                                    <a target="_blank" href="https://boldcommerce.com/"><img id="ubi-logo" src="icons/bold_icon.png" alt="bold commerce logo"></a>
+                                </div>
+                            
+                            </div>
+                            <div class="job-responsibilties">
+                                <ul>
+                                    <li>Improved end to end testing coverage using JavaScript and CodeceptJS to
+                                        cover new version of the Customer Pricing app</li>
+                                    <li>Made front end changes to Discount app using React Components and CSS</li>
+                                    <li>Fixed high priority issues occurring in merchant stores using PHP</li>
+                                    <li>Innovate or Die (48-hour company-wide hackathon)
+                                        <ul>
+                                            <li>Developed a project using JavaScript and React</li>
+                                            <li>Presented and demonstrated project to 400 people</li>
+                                            <li>Awarded second place</li>
+                                        </ul>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a target="_blank" href="/pdfs/ana_ignat_resume.pdf"><button>view my full resume here</button></a>
                 
+                </div>
+            </div>
+
+            <div id="projects" class="section">
+                <div class="section-div">
+                    <h1>projects</h1>
+                    <div class="white-box" id="project-box">
+                        <div class="project-section">
+                            <div class="project-header-parent">
+                                <div class="project-header">
+                                    <h2 class="project-title">personal website</h2>
+                                </div>
+                                <div class="project-header">
+                                    <a target="_blank" href="https://github.com/anaignat/anaignat.github.io"><img id="github-icon" src="icons/github_logo.png" alt="go to github repository"></a>
+                                    <a target="_blank" href="http://anaignat.com/"><img id="external-logo" src="icons/external_icon.png" alt="go to website"></a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Built a personal website to showcase projects
+                                    and skills</li>
+                                <li>Designed with Figma</li>
+                                <li>Developed with HTML, CSS and Javascript</li>
+                            </ul>
+                            <a target="_blank" href="https://www.figma.com/file/HmkXd9HMn181rE5x6bKPMv/anaignat.com?node-id=0%3A1""><button>view the figma design file</button></a>
+                        </div>
+                        <div class="project-section">
+                            <img id="proj-img" src="images/anaignat.png" alt="picture of website">
+                        </div> 
+                    </div>
+                    <div class="white-box" id="project-box">
+                        <div class="project-section">
+                            <div class="project-header-parent">
+                                <div class="project-header">
+                                    <h2 class="project-title">meme of the day</h2>
+                                </div>
+                                <div class="project-header">
+                                    <a target="_blank" href="https://github.com/anaignat/memeoftheday.github.io"><img id="github-icon" src="icons/github_logo.png" alt="go to github repository"></a>
+                                    <a target="_blank" href="http://memeoftheday.ca/"><img id="external-logo" src="icons/external_icon.png" alt="go to website"></a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Built a website to showcase my favorite memes from the internet</li>
+                                <li>Developed with HTML and CSS</li>
+                            </ul>
+                        </div>
+                        <div class="project-section">
+                            <img id="proj-img" src="images/memeoftheday.png" alt="picture of website">
+                        </div> 
+                    </div>
+                    <div class="white-box" id="project-box">
+                        <div class="project-section">
+                            <div class="project-header-parent">
+                                <div class="project-header">
+                                    <h2 class="project-title">family planner</h2>
+                                </div>
+                                <div class="project-header">
+                                    <a target="_blank" href="https://github.com/MarkRobitaille/HCI-Project"><img id="github-icon" src="icons/github_logo.png" alt="go to github repository"></a>
+                                    <a target="_blank" href="https://markrobitaille.ca/HCI-Project/#/"><img id="external-logo" src="icons/external_icon.png" alt="go to website"></a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Built a website to showcase my favorite memes from the internet</li>
+                                <li>Developed with HTML and CSS</li>
+                            </ul>
+                        </div>
+                        <div class="project-section">
+                            <img id="proj-img" src="images/familyplanner.png" alt="picture of website">
+                        </div> 
+                    </div>
+                    <div class="white-box" id="mff">
+                        <div class="project-section">
+                            <div class="project-header-parent">
+                                <div class="project-header">
+                                    <h2 class="project-title">my fitness friend</h2>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>Group Project</li>
+                                <li>Mockups created in Figma</li>
+                            </ul>
+                            <a target="_blank" href="mff/mff_wireframe.pdf"><button>view the mockups</button></a>
+                        </div>
+                        <div class="project-section">
+                            <video controls>  
+                                <source src="mff/myfitnessfriend.mp4" type="video/mp4">
+                                 your browser doesn't support the video tag
+                            </video>
+                        </div> 
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        <div class = "other">
-
-        <div id="skills">
-
-            <h3 class="languages"> Technical Skills: </h3> 
-
-            <div class = "button" ><p id = "lang">Java</p></div>
-            <div class = "button" ><p id = "lang">HTML & CSS</p></div>
-            <div class = "button" ><p id = "lang">JavaScript</p></div>
-            <div class = "button" ><p id = "lang">C & C++</p></div>
-            <div class = "button" ><p id = "lang">SQL</p></div>
-            <div class = "button" ><p id = "lang">Assembly</p></div>
-            <div class = "button" ><p id = "lang">Processing</p></div>
-            <div class = "button" ><p id = "lang">VS Code</p></div>
-            <div class = "button" ><p id = "lang">Git/Github</p></div>
-            <div class = "button" ><p id = "lang">Bash</p></div>
-            <div class = "button" ><p id = "lang">MacOS</p></div>
-
-            <!--
-            <h3 class="languages"> Relevant Coursework: </h3> 
-        
-            <div class = "button-course" ><p id = "course">Data Structures and Algorithms</p></div>
-            <div class = "button-course" ><p id = "course">Analysis of Algorithms</p></div>
-            <div class = "button-course" ><p id = "course">Databases</p></div>
-            <div class = "button-course" ><p id = "course">Object Orientation</p></div>
-            <div class = "button-course" ><p id = "course">Intro to Computer Systems</p></div>
-           -->
-
-        </div>
-
-        <div id="projects">
-
-            <h3 class="proj"> Projects </h3> 
-
-            <div class="container">
-
-                <div class = "item" class="thisSite">
-                    
-                    <div class="proj-info"> 
-                     <h4> Personal Website </h4>
-                        <ul>
-                        <li>A personal website showcasing my skills, projects and resume </li>
-                        <li>Made using HTML, CSS and Javascript </li>
-                        </ul>
-                        <div class="proj-link">
-                            <a target="_blank" href="https://anaignat.com"> <div class="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
-                            <a target="_blank" href="https://github.com/anaignat/anaignat.github.io"> <div class="source"> <i class="fab fa-github fa-x"></i> View on Github </a> </div>
-                        </div>
-
-                    </div>
-        
-                  
-                    <div class = "proj-pic">      
-                        <img src="/images/site.png" alt="website">
-                    </div>
-
-                </div>
-
-                <div class = "item" class="meme"> 
-
-                    <h4> Meme of the Day </h4>
-                    
-                    <div class="proj-info"> 
-                        <ul>
-                        <li> A site I made to display my favorite memes </li>
-                        <li>The meme changes based on the day of the month </li>
-                        <li>Made using HTML, CSS and Javascript</li>
-                        </ul>
-                   
-                        <div class="proj-link">
-                            <a target="_blank" href="http://memeoftheday.ca/"> <div id="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
-                            <a target="_blank" href="https://github.com/anaignat/memeoftheday.github.io"> <div id="source"> <i class="fab fa-github fa-x"></i> View on Github </a> </div>
-                        </div>
-
-                    </div>
-        
-                  
-                    <div class = "proj-pic">      
-                         <img src="/images/meme.png" alt="website">
-                    </div>
-
-                </div>
-
-
-                <div class = "item" class="hci"> 
-
-                    <h4> Family Planner for HCI Group Project </h4>
-                    
-                    <div class="proj-info"> 
-                    <ul>
-                        <li>Made for a group project for Human Computer Interaction I </li>
-                        <li>Idea was to make a family planning/communication app where each family has 
-                        access to calendars, messenger and lists to coordinate family activities. </li>
-                        <li>I did the styling of the website using CSS </li>
-                   </ul>
-                        <div class="proj-link">
-                            <a target="_blank" href="https://markrobitaille.ca/HCI-Project/#/"> <div class="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
-                            <a target="_blank" href="https://github.com/MarkRobitaille/HCI-Project"> <div class="source"> <i class="fab fa-github fa-x"></i> View on Github </a> </div>
-                        </div>
-
-                    </div>
-        
-                  
-                    <div class = "proj-pic">      
-                         <img src="/images/fam.png" alt="website">
-                    </div>
-
-                </div>
-
-                <!--<div class = "item" class="granite"> 
-
-                    <h4> Granite Financial Group </h4>
-                    
-                    <div class="proj-info"> 
-                    <ul>
-                        <li>Created website mockups with new design ideas using Sketch </li>
-                        <li>Mockups were given to the company that implemented parts of design </li>
-                   </ul>
-                        <div class="proj-link">
-                            <a target="_blank" href="https://granitefinancialgroup.ca/"> <div class="live">  <i class="fas fa-external-link-alt"></i> View Website </a></div>
-                            <a target="_blank" href="http://anaignat.com/pdfs/gfg_website.pdf"> <div class="source"> <i class="fas fa-external-link-alt"></i> View Designs </a> </div>
-                        </div>
-
-                    </div>
-        
-                  
-                    <div class = "proj-pic">      
-                         <img src="/images/gfg.png" alt="website">
-                    </div>
-
-                </div>-->
-
-            </div>
-        
-        </div>
-
-
-        <div id="contact">
-             
-                                <a class="email-me" target="_blank" href="mailto:contact@anaignat.com"> <i class="far fa-envelope"></i></i> contact@anaignat.com </a> 
-
-        </div>
-
-    </div>
-
-        <footer > <a href="https://github.com/anaignat/anaignat.github.io" target="_blank">made by ana</a> </footer>
-
-
+        <script src="js/script.js"></script>
     </body>
 
 </html>
